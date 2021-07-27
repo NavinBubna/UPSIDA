@@ -645,3 +645,124 @@ tbody::-webkit-scrollbar {
 
   color: #2b3144;
 }
+
+.policies_heading {
+  margin: 105px 0 0 341px;
+  width: 759px;
+  height: 59px;
+  text-align: center;
+}
+
+.policies_heading_top {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #2b3144;
+}
+
+.policies_heading_content {
+  font-family: Karla;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 41px;
+  /* identical to box height */
+  margin: 0;
+  text-align: center;
+
+  color: #2b3144;
+}
+
+.policies_grid {
+  width: 1160px;
+  height: 299px;
+  margin: 43px 0 0 140px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 32px;
+}
+
+.policies_card {
+  width: 564px;
+  height: 299px;
+
+  width: 564px;
+  height: 299px;
+  border-radius: 12px;
+}
+
+.policies_maroon_card {
+  background: #7d2022;
+}
+
+.policies_orange_card {
+  background: #db873e;
+}
+
+.policies_green_card {
+  background: #41a92e;
+}
+
+.policies_blue_card {
+  background: #103d7b;
+}
+
+.policies_card_heading {
+  width: 506px;
+  height: 42px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 21px;
+  /* or 140% */
+
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+  margin: 35px 0 0 29px;
+  text-align: left;
+}
+
+.policies_line {
+  width: 506px;
+  height: 0px;
+  opacity: 0.2;
+  border: 1px solid #ffffff;
+  margin: 72px 0 0 29px;
+}
+
+.policies_card_content {
+  font-family: Karla;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 30px;
+  /* identical to box height, or 136% */
+  margin: 20px 0 0 29px;
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+}
+
+.policies_read_more {
+  width: 128px;
+  height: 39px;
+  background: #ffffff;
+  border-radius: 8px;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 30px;
+  /* identical to box height, or 200% */
+  margin: 21px 0 0 29px;
+  letter-spacing: 0.03em;
+}
