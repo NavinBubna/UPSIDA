@@ -85,7 +85,7 @@ text-align: left; */
 }
 
 .aboutus--container {
-  background: rgba(198, 200, 206, 0.06);
+  background: #f0f2f9;
 }
 
 .grid--1x2 {
@@ -388,15 +388,17 @@ tbody::-webkit-scrollbar {
   border-radius: 5.5px;
 }
 
-.about{
+.top_image {
   padding-top: 85px;
   width: 100vw;
   height: 369px;
   left: 0px;
 }
-.about_image{
+
+.top_image_width {
   width: 100vw;
 }
+
 .about_text {
   position: absolute;
   width: 237px;
@@ -413,32 +415,32 @@ tbody::-webkit-scrollbar {
   text-align: center;
   text-transform: capitalize;
 
-  color: #FFFFFF;
+  color: #ffffff;
 
   text-shadow: 0px 4px 30px rgba(0, 0, 0, 0.15);
 }
 
-.gridabout{
+.gridabout {
   height: 711px;
   width: 100vw;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.gridaboutitem{
+.gridaboutitem {
   width: 551px;
   height: 250px;
 }
 
-.gridaboutitem1{
+.gridaboutitem1 {
   margin: 29.407294832826747vh 0 195px 140px;
 }
 
-.gridaboutitem2{
+.gridaboutitem2 {
   margin: 18.237082066869302vh 0 195px 0;
 }
 
-.gridaboutpara{
+.gridaboutpara {
   font-family: Lato;
   font-style: normal;
   font-weight: normal;
@@ -446,29 +448,29 @@ tbody::-webkit-scrollbar {
   line-height: 25px;
   margin-top: 0;
   /* or 147% */
-  color: #2B3144;
+  color: #2b3144;
 }
 
-.values{
+.values {
   width: 100vw;
   height: 595px;
   left: 0px;
-  background: #F0F2F9;
+  background: #f0f2f9;
 }
 
-.values_heading{
+.values_heading {
   width: 305px;
   height: 59px;
   margin-left: 567px;
-  padding-top:71px;
+  padding-top: 71px;
 
   display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.values_headingtop{
+.values_headingtop {
   position: static;
   width: 71px;
   height: 18px;
@@ -481,7 +483,7 @@ align-items: center;
   line-height: 18px;
   /* identical to box height */
   text-align: center;
-  color: #2B3144;
+  color: #2b3144;
   /* Inside Auto Layout */
   flex: none;
   order: 0;
@@ -489,33 +491,32 @@ align-items: center;
   margin: 0px 0px;
 }
 
-.values_headingcontent{
+.values_headingcontent {
   width: 305px;
-height: 41px;
-left: 0px;
-top: 18px;
+  height: 41px;
+  left: 0px;
+  top: 18px;
 
-font-family: Karla;
-font-style: normal;
-font-weight: bold;
-font-size: 35px;
-line-height: 41px;
-/* identical to box height */
+  font-family: Karla;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 41px;
+  /* identical to box height */
 
-text-align: center;
+  text-align: center;
 
-color: #2B3144;
+  color: #2b3144;
 
+  /* Inside Auto Layout */
 
-/* Inside Auto Layout */
-
-flex: none;
-order: 1;
-flex-grow: 0;
-margin: 0px 0px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  margin: 0px 0px;
 }
 
-.values_content{
+.values_content {
   width: 888px;
   height: 150px;
   margin-left: 276px;
@@ -530,15 +531,15 @@ margin: 0px 0px;
 
   text-align: center;
 
-  color: #2B3144;
+  color: #2b3144;
 }
 
-.values_image{
+.values_image {
   margin-top: 47px;
   margin-left: 140px;
 }
 
-.expert{
+.expert {
   margin-top: 321px;
   height: 580px;
   width: 100vw;
@@ -546,20 +547,20 @@ margin: 0px 0px;
   grid-template-columns: 1fr 1fr;
 }
 
-.expertitem{
+.expertitem {
   width: 528px;
   height: 557px;
 }
 
-.expertitem1{
+.expertitem1 {
   margin-left: 140px;
 }
 
-.expertitem2{
+.expertitem2 {
   margin-right: 105px;
 }
 
-.expertheading{
+.expertheading {
   width: 320px;
   height: 41px;
   font-family: Karla;
@@ -571,10 +572,10 @@ margin: 0px 0px;
 
   text-align: center;
 
-  color: #2B3144;
+  color: #2b3144;
 }
 
-.expertcontent{
+.expertcontent {
   /* width: 528px;
   height: 125px; */
   font-family: Lato;
@@ -586,12 +587,12 @@ margin: 0px 0px;
   color: #797979;
 }
 
-.partner{
+.partner {
   height: 919px;
   width: 100vw;
 }
 
-.partner_heading{
+.partner_heading {
   width: 833px;
   font-family: Karla;
   font-style: normal;
@@ -601,10 +602,10 @@ margin: 0px 0px;
   text-align: center;
   margin: 0 auto;
   padding-top: 220px;
-  color: #2B3144;
+  color: #2b3144;
 }
 
-.partnercontent{
+.partnercontent {
   width: 1161px;
   height: 90px;
   font-family: Lato;
@@ -618,5 +619,29 @@ margin: 0px 0px;
   padding-top: 160px;
   padding-left: 139px;
   color: #000000;
+}
 
+.flagship_grid {
+  height: 1672px;
+  width: 1161px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  column-gap: 24px;
+  row-gap: 44px;
+  margin: 122px 0 0 139px;
+}
+
+.flagship_heading {
+  margin: 85px;
+  font-family: Karla;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 41px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #2b3144;
 }
