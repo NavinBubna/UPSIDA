@@ -7,37 +7,146 @@
     <title>Home</title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Karla"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+    <script src="/script/main.js"></script>
   </head>
   <body>
     <nav class="nav">
-      <a class="nav__logo" href="/index.html">
-        <img src="/images/Frame 220.svg" alt="website logo" />
-        <!-- <p class="logo__title">
-          Uttar Pradesh State Industrial Development Authority
-        </p> -->
-      </a>
+      <div class="nav__logo">
+        <img src="/images/logo.svg" alt="website logo" />
+      </div>
+      <div class="logo--title logo--and--special">
+        Uttar Pradesh State industrial development authority
+      </div>
+      <div class="special--link logo--and--special">
+        <a class="link1" href="">special link one</a>
+        <a class="link2" href="">special link two</a>
+      </div>
 
-      <ul class="list list--inline">
-        <li class="list__item">
-          <a class="nav--link" href="/about.html">ABOUT US</a>
-        </li>
-        <li class="list__item">
-          <a class="nav--link" href="/policies.html">POLICIES</a>
-        </li>
-        <li class="list__item">
-          <a class="nav--link" href="/eservices.html">E-SERVICES</a>
-        </li>
-        <li class="list__item">
-          <a class="nav--link" href="/flagship.html">FLAGSHIP PROJECTS</a>
-        </li>
-        <li class="list__item">
-          <a class="nav--link" href="">RESOURCE CENTER</a>
-        </li>
-        <li class="list__item">
-          <a class="nav--link" href="/officeOrders.html">OFFICE ORDERS</a>
-        </li>
-      </ul>
+      <div class="help logo--and--special">
+        <a class="contact" href="">Contact us</a>
+        <a class="login" href="">Login</a>
+      </div>
     </nav>
+
+    <nav class="bottom--nav">
+      <div class="list__item">
+        <a class="nav--link" href="/index.html">HOME</a>
+      </div>
+      <div class="list__item">
+        <a class="nav--link" href="/about.html">ABOUT US</a>
+      </div>
+      <div class="list__item">
+        <a class="nav--link" href="/policies.html">POLICIES</a>
+      </div>
+      <div class="list__item">
+        <a class="nav--link" href="/eservices.html">E-SERVICES</a>
+      </div>
+      <div class="list__item">
+        <a class="nav--link" href="/flagship.html">FLAGSHIP PROJECTS</a>
+      </div>
+      <div class="list__item">
+        <a class="nav--link dropbtn" onclick="myFunction()">
+          RESOURCE CENTER
+        </a>
+      </div>
+      <div class="list__item">
+        <a class="nav--link" href="/officeOrders.html">OFFICE ORDERS</a>
+      </div>
+      <div class="list__item">
+        <a class="nav--link" href="/officeOrders.html">GIS</a>
+      </div>
+      <div class="list__item">
+        <a class="nav--link" href="/officeOrders.html">AVAILABLE PLOTS</a>
+      </div>
+    </nav>
+
+    <div class="dropdown-content" id="myDropdown">
+      <div class="content">
+        <div class="resource--heading">
+          <div class="resource--tag">Our recent links</div>
+          <div class="resource--title">Resource Center</div>
+        </div>
+
+        <!-- <div class="doc--table"> -->
+        <table class="documents--table">
+          <thead class="document--header">
+            <tr>
+              <th>DOCUMENTS</th>
+            </tr>
+          </thead>
+          <tbody class="document--body">
+            <tr>
+              <td>Industrial area operating process</td>
+            </tr>
+            <tr>
+              <td>Operating Manual</td>
+            </tr>
+            <tr>
+              <td>Document For approval of building plans</td>
+            </tr>
+            <tr>
+              <td>Present Rates</td>
+            </tr>
+            <tr>
+              <td>Condition For tenders</td>
+            </tr>
+            <tr>
+              <td>Allotment application form</td>
+            </tr>
+            <tr>
+              <td>Service Rules</td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- </div> -->
+
+        <table class="upsida--table">
+          <thead class="document--header">
+            <tr>
+              <th>UPSIDA</th>
+            </tr>
+          </thead>
+          <tbody class="document--body">
+            <tr>
+              <td>By laws of UPSIDA</td>
+            </tr>
+            <tr>
+              <td>
+                Amendment in UPSIDA Land Development & Building Regulation 2018
+              </td>
+            </tr>
+            <tr>
+              <td>Second Amendment in UPSIDA Land Development</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <table class="pages--table">
+          <thead class="document--header">
+            <tr>
+              <th>PAGES</th>
+            </tr>
+          </thead>
+          <tbody class="document--body">
+            <tr>
+              <td>Office Orders</td>
+            </tr>
+            <tr>
+              <td>Development Process</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
     <img class="hero" src="/images/image 2.jpg" alt="" />
     <div class="intro--container">
       <marquee
@@ -54,7 +163,26 @@
       >
     </div>
     <div class="services">
-      <img src="/images/Group 23.png" alt="" />
+      <div class="service_icon service_gap">
+        <img src="images/Group 22-1.svg" alt="" class="service_image" />
+        <div class="service_text">Online services</div>
+      </div>
+      <div class="service_icon service_gap">
+        <img src="images/Group 22-2.svg" alt="" class="service_image" />
+        <div class="service_text">Track application</div>
+      </div>
+      <div class="service_icon service_gap">
+        <img src="images/Group 22-3.svg" alt="" class="service_image" />
+        <div class="service_text">UPSIDA newsletter</div>
+      </div>
+      <div class="service_icon service_gap">
+        <img src="images/Group 22-4.svg" alt="" class="service_image" />
+        <div class="service_text">Invester guide</div>
+      </div>
+      <div class="service_icon">
+        <img src="images/Group 22-5.svg" alt="" class="service_image" />
+        <div class="service_text">Application for logistics</div>
+      </div>
     </div>
     <div class="grid grid--1x2 aboutus--container">
       <div class="intro--heading">
@@ -69,7 +197,9 @@
           has been instrumental in keeping the State at the numero uno position
           among the states for several decades now.
         </p>
-        <button class="aboutus--more">Learn More</button>
+        <button class="aboutus--more">
+          <a href="/about.html" target="_blank">Learn More</a>
+        </button>
       </div>
     </div>
     <div class="leader">
@@ -187,8 +317,8 @@
             sint. Velit officia consequat duis enim velit mollit.
           </div>
 
-          <div class="flagship--more">
-            <a href="/transGangaProject.html">Learn More</a>
+          <div class="index_flagship_more">
+            <a class="card_link" href="">Learn More</a>
           </div>
         </div>
 
@@ -205,8 +335,9 @@
             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
             sint. Velit officia consequat duis enim velit mollit.
           </div>
-          <div class="flagship--area">Available area: 1144.1 acres</div>
-          <div class="flagship--more"><a href="">Learn More</a></div>
+          <div class="index_flagship_more">
+            <a class="card_link" href="">Learn More</a>
+          </div>
         </div>
 
         <div class="cards">
@@ -224,8 +355,9 @@
             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
             sint. Velit officia consequat duis enim velit mollit.
           </div>
-          <div class="flagship--area">Available area: 1144.1 acres</div>
-          <div class="flagship--more"><a href="">Learn More</a></div>
+          <div class="index_flagship_more">
+            <a class="card_link" href="">Learn More</a>
+          </div>
         </div>
 
         <div class="cards">
@@ -238,8 +370,9 @@
             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
             sint. Velit officia consequat duis enim velit mollit.
           </div>
-          <div class="flagship--area">Available area: 1144.1 acres</div>
-          <div class="flagship--more"><a href="">Learn More</a></div>
+          <div class="index_flagship_more">
+            <a class="card_link" href="">Learn More</a>
+          </div>
         </div>
 
         <div class="cards">
@@ -255,8 +388,9 @@
             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
             sint. Velit officia consequat duis enim velit mollit.
           </div>
-          <div class="flagship--area">Available area: 1144.1 acres</div>
-          <div class="flagship--more"><a href="">Learn More</a></div>
+          <div class="index_flagship_more">
+            <a class="card_link" href="">Learn More</a>
+          </div>
         </div>
 
         <div class="cards">
@@ -269,13 +403,14 @@
             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
             sint. Velit officia consequat duis enim velit mollit.
           </div>
-          <div class="flagship--area">Available area: 1144.1 acres</div>
-          <div class="flagship--more"><a href="">Learn More</a></div>
+          <div class="index_flagship_more">
+            <a class="card_link" href="">Learn More</a>
+          </div>
         </div>
       </div>
-      <a href="/flagship.html" target="_blank"
-        ><div class="view__more">View More</div></a
-      >
+      <div class="view__more">
+        <a href="/flagship.html" target="_blank">View More</a>
+      </div>
     </div>
 
     <table class="news__letter">
@@ -284,7 +419,7 @@
           <th>UPSIDA Newsletter</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody class="news--body">
         <tr>
           <td>
             Newsletter (Edition-1)
@@ -330,7 +465,7 @@
           <th>News and tenders</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody class="news--body">
         <tr>
           <td>
             E-tender notice for maintainence and development
