@@ -7,15 +7,31 @@
     <title>About Us</title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Karla"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato"
-      rel="stylesheet"
-    />
     <script src="/script/main.js"></script>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Karla|Alatsi|Noto Sans JP|Inter|Roboto"
+      rel="stylesheet"
+    />
+
+    <!-- Jquery for navbar and footer -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Loading Navbar & Footer -->
+    <script>
+      $(function () {
+        $("#navbar").load("navbar.html");
+      });
+      $(function () {
+        $("#footer").load("footer.html");
+      });
+    </script>
+    <!-- Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <!-- Navbar -->
@@ -42,7 +58,7 @@
         <a class="nav--link" href="/index.html">HOME</a>
       </div>
       <div class="list__item">
-        <a class="nav--link" href="/about.html">ABOUT US</a>
+        <a class="nav--link active" href="/about.html">ABOUT US</a>
       </div>
       <div class="list__item">
         <a class="nav--link" href="/policies.html">POLICIES</a>
@@ -62,14 +78,15 @@
         <a class="nav--link" href="/officeOrders.html">OFFICE ORDERS</a>
       </div>
       <div class="list__item">
-        <a class="nav--link" href="/officeOrders.html">GIS</a>
+        <a class="nav--link" href="#">GIS</a>
       </div>
       <div class="list__item">
-        <a class="nav--link" href="/officeOrders.html">AVAILABLE PLOTS</a>
+        <a class="nav--link" href="#">AVAILABLE PLOTS</a>
       </div>
     </nav>
 
     <div class="dropdown-content" id="myDropdown">
+      <div class="line"></div>
       <div class="content">
         <div class="resource--heading">
           <div class="resource--tag">Our recent links</div>
@@ -148,18 +165,23 @@
       </div>
     </div>
 
+    <!-- <div id="navbar"></div> -->
+
     <div class="top_image">
       <!-- <img class="about_image"src="images/aboutus--pic2.svg" alt=""/>
       <h1 class="about_text">About Us</h1> -->
       <img class="top_image_width" src="images/aboutus--pic1.svg" alt="" />
     </div>
 
-    <div class="grid grid--1x2 aboutus--container" style="margin-top: 78px">
-      <div class="intro--heading">
+    <div
+      class="grid grid--1x2 aboutus--container"
+      style="margin-top: 78px; height: 260px"
+    >
+      <div class="intro--heading" data-aos="fade-left">
         <p class="aboutus--heading">About us</p>
         <p class="whatisupsida--heading">What is UPSIDA?</p>
       </div>
-      <div class="aboutus--para">
+      <div class="aboutus--para" data-aos="fade-left">
         <p>
           UPSIDA is the nodal agency for developing industrial
           infrastructure.<br /><br />
@@ -167,12 +189,11 @@
           has been instrumental in keeping the State at the numero uno position
           among the states for several decades now.
         </p>
-        <button class="aboutus--more">Learn More</button>
       </div>
     </div>
 
     <div class="gridabout">
-      <div class="gridaboutitem gridaboutitem1">
+      <div class="gridaboutitem gridaboutitem1" data-aos="fade-up">
         <p class="gridaboutpara">
           We are a public sector undertaking of the Corporation of Uttar Pradesh
           spearheading the development of industrial infrastructure in State
@@ -191,18 +212,18 @@
           </li>
         </ul>
       </div>
-      <div class="gridaboutitem gridaboutitem2">
+      <div class="gridaboutitem gridaboutitem2" data-aos="fade-left">
         <img src="images/aboutus--pic3.svg" alt="" />
       </div>
     </div>
 
     <div class="values">
-      <div class="values_heading">
+      <div class="values_heading" data-aos="fade-up">
         <small class="values_headingtop"> Our Values </small>
         <p class="values_headingcontent">What we stand for</p>
       </div>
 
-      <p class="values_content">
+      <p class="values_content" data-aos="fade-up">
         We provide infrastructure facilities and services to our entrepreneurs,
         and strive to build on our strength as a pillar of the pulsating
         industrial ecosystem of Uttar Pradesh.
@@ -214,15 +235,15 @@
         Parks, Apparel Park, Leather Park , among others.
       </p>
 
-      <div class="values_image">
+      <div class="values_image" data-aos="fade-up">
         <img src="images/aboutus--pic4.svg" alt="" />
       </div>
     </div>
 
     <div class="expert">
       <div class="expertitem expertitem1">
-        <h4 class="expertheading">Know Our Expertise</h4>
-        <p class="expertcontent">
+        <h4 class="expertheading" data-aos="fade-up">Know Our Expertise</h4>
+        <p class="expertcontent" data-aos="fade-up">
           With an excellent in house pool of multi disciplinary managerial
           experts, engineers and architects, complemented by our in depth
           experience, today we have transformed ourselves into an organization
@@ -230,13 +251,13 @@
           <br /><br />
           Our facilities include
         </p>
-        <ul class="checkmark">
+        <ul class="checkmark" data-aos="fade-up">
           <li class="expertcontent">
             Industrial, residential, commercial, institutional and support
             facilities
           </li>
           <br />
-          <li class="expertcontent">
+          <li class="expertcontent" data-aos="fade-up">
             Located across the state of Uttar Pradesh at prime locations and
             near to existing clusters, raw material, hubs, highways etc and are
             equipped with road network, electrification network, parks and green
@@ -244,7 +265,7 @@
           </li>
         </ul>
         <br />
-        <p class="expertcontent">
+        <p class="expertcontent" data-aos="fade-up">
           Provide need based space for common facilities like banks, post
           office, dispensary, police outpost, shops business development
           centers, fields-hostels, CETP/STP, shopping malls, expo-centers,
@@ -252,7 +273,7 @@
         </p>
       </div>
 
-      <div class="expertitem expertitem2">
+      <div class="expertitem expertitem2" data-aos="fade-left">
         <img src="images/aboutus--pic5.svg" alt="" />
       </div>
     </div>
@@ -269,7 +290,7 @@
           style="margin-top: 60px"
         />
       </marquee>
-      <p class="partnercontent">
+      <p class="partnercontent" data-aos="fade-up">
         With Uttar Pradesh rapidly rising to become one of the top business
         destinations in India, we welcome entrepreneurs desiring to set up or
         expand their industrial ventures to explore the opportunities being
@@ -279,157 +300,12 @@
       </p>
     </div>
 
-    <footer class="footer">
-      <img src="images/footerlogo.png" alt="UPSIDA logo" class="footer_image" />
+    <div id="footer"></div>
 
-      <div class="grid footer_grid">
-        <div class="footer_grid_item1">
-          <table class="footer_table1">
-            <thead class="footer_table_heading">
-              <tr>
-                <th>Quick links</th>
-              </tr>
-            </thead>
-            <tbody class="footer_table_body">
-              <tr>
-                <td>About Us</td>
-              </tr>
-              <tr>
-                <td>Policies</td>
-              </tr>
-              <tr>
-                <td>E-services</td>
-              </tr>
-              <tr>
-                <td>Projects</td>
-              </tr>
-              <tr>
-                <td>Office Orders</td>
-              </tr>
-              <tr>
-                <td>GIS</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="footer_grid_item2">
-          <table class="footer_table2">
-            <thead class="footer_table_heading">
-              <tr>
-                <th>Land Allotment</th>
-              </tr>
-            </thead>
-            <tbody class="footer_table_body">
-              <tr>
-                <td>Industrial Land Allotment Form</td>
-              </tr>
-              <tr>
-                <td>Checklist Document</td>
-              </tr>
-              <tr>
-                <td>Operating Manual 2011</td>
-              </tr>
-              <tr>
-                <td>SOP for industrial and allotment</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="footer_grid_item3">
-          <table class="footer_table3">
-            <thead class="footer_table_heading">
-              <tr>
-                <th>UPSIDA</th>
-              </tr>
-            </thead>
-            <tbody class="footer_table_body">
-              <tr>
-                <td>Annexure A, Inspection Procedure Checklist & Performa</td>
-              </tr>
-              <tr>
-                <td>Land Regulation 2004 after 26 UPSIDA</td>
-              </tr>
-              <tr>
-                <td>Building Regulation 2004 after 26 UPSIDA</td>
-              </tr>
-              <tr>
-                <td>UPSIDA Byelaws</td>
-              </tr>
-              <tr>
-                <td>SOP For Computerised Allocation of Inspectors</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="footer_grid_item4">
-          <table class="footer_table4">
-            <thead class="footer_table_heading">
-              <tr>
-                <th>Security & Privacy</th>
-              </tr>
-            </thead>
-            <tbody class="footer_table_body">
-              <tr>
-                <td>Terms of Use</td>
-              </tr>
-              <tr>
-                <td>Privacy Policy</td>
-              </tr>
-              <tr>
-                <td>Return/Refund Policy</td>
-              </tr>
-              <tr>
-                <td>Store Location</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="footer_grid_item5">
-          <table class="footer_table5">
-            <thead class="footer_table_heading">
-              <tr>
-                <th>Public Forrum</th>
-              </tr>
-            </thead>
-            <tbody class="footer_table_body">
-              <tr>
-                <td>View Allotment Details</td>
-              </tr>
-              <tr>
-                <td>View Inspection Document</td>
-              </tr>
-              <tr>
-                <td>View BuildingPlan Document</td>
-              </tr>
-              <tr>
-                <td>View Service TimeLine</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      <h4 class="footer_socialmedia_heading">Social Media</h4>
-      <div class="socialmedia">
-        <div class="socialmedia_logos">
-          <img src="images/facebook.svg" alt="" />
-        </div>
-        <div class="socialmedia_logos">
-          <img src="images/insta.svg" alt="" />
-        </div>
-        <div class="socialmedia_logos">
-          <img src="images/youtube.svg" alt="" />
-        </div>
-        <div class="socialmedia_logos">
-          <img src="images/twitter.svg" alt="" />
-        </div>
-        <div class="socialmedia_logos">
-          <img src="images/wikipedia.png" alt="" />
-        </div>
-      </div>
-
-      <div class="divider"></div>
-      <div class="rights">© 2021 UPSIDA | All Rights Reserved</div>
-    </footer>
+    <!-- Script for animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

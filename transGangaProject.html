@@ -7,16 +7,34 @@
     <title>TransGanga Project</title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Karla"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="css/animation.css">
     <script src="/script/main.js"></script>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Karla|Alatsi|Noto Sans JP|Inter|Roboto"
+      rel="stylesheet"
+    />
+
+    <!-- Jquery for navbar and footer -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Loading Navbar & Footer -->
+    <script>
+      $(function () {
+        $("#navbar").load("navbar.html");
+      });
+      $(function () {
+        $("#footer").load("footer.html");
+      });
+    </script>
+    <!-- Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
+
   <body>
     <!-- Navbar -->
     <nav class="nav">
@@ -54,18 +72,16 @@
         <a class="nav--link" href="/flagship.html">FLAGSHIP PROJECTS</a>
       </div>
       <div class="list__item">
-        <a class="nav--link dropbtn" onclick="myFunction()">
-          RESOURCE CENTER
-        </a>
+        <a class="nav--link dropbtn" onclick="myFunction()"> RESOURCE CENTER </a>
       </div>
       <div class="list__item">
         <a class="nav--link" href="/officeOrders.html">OFFICE ORDERS</a>
       </div>
       <div class="list__item">
-        <a class="nav--link" href="/officeOrders.html">GIS</a>
+        <a class="nav--link" href="#">GIS</a>
       </div>
       <div class="list__item">
-        <a class="nav--link" href="/officeOrders.html">AVAILABLE PLOTS</a>
+        <a class="nav--link" href="#">AVAILABLE PLOTS</a>
       </div>
     </nav>
 
@@ -148,19 +164,19 @@
       </div>
     </div>
 
-    <div class="keeping_navbar_at_place"></div>
+    <!-- <div id="navbar"></div> -->
 
-    <div class="flagship_project_top flagship_project_alignment">
+    <div class="flagship_project_top flagship_project_alignment" data-aos="fade-up">
       <p class="flagship_project_top_content">Unnao</p>
     </div>
 
-    <h1 class="flagship_project_alignment flagship_project_heading">
+    <h1 class="flagship_project_alignment flagship_project_heading" data-aos="fade-up">
       Trans ganga city, UNNAO
     </h1>
 
     <p
       class="flagship_project_alignment flagship_para"
-      style="margin-top: 33px"
+      style="margin-top: 33px" data-aos="fade-up"
     >
       Trans Ganga Project is spread over 1144.1 Acres of near Kanpur. <br />
       Current Rate 10850 INR/Sq. mtr. for industrial & 18000 INR/Sq. mtr. for
@@ -169,7 +185,7 @@
       industrial, residential and commercial sectors. Situated within burgeoning
       belt of Kanpur and Lucknow zone.
     </p>
-    <ul class="flagship_project_alignment flagship_para">
+    <ul class="flagship_project_alignment flagship_para" data-aos="fade-up">
       <li>
         Being developed as an Industrial Model Township with industrial,
         residential and commercial sectors.
@@ -178,25 +194,20 @@
       <li>Land Earmarked for flatted factories</li>
     </ul>
 
-    <h4 class="flagship_project_alignment loc">Location</h4>
-    <p class="flagship_project_alignment loc_content">
+    <h4 class="flagship_project_alignment loc" data-aos="fade-up">Location</h4>
+    <p class="flagship_project_alignment loc_content" data-aos="fade-up">
       Latitude, Longitude - 23.43718, 87.25307 (Click to view map)
     </p>
 
-    <p class="flagship_project_alignment fp_scroll">Scroll down</p>
-    <div class="fp_scroll_arrow">
-      <img src="images/Arrow 1.svg" alt="Down arrow" />
+    <div class="flag_p_img1" data-aos="fade-up">
+      <img src="images/flagship_p--pic1.svg" alt=""/>
     </div>
 
-    <div class="flag_p_img1">
-      <img src="images/flagship_p--pic1.svg" alt="" />
-    </div>
+    <hr class="flagship_project_alignment fp_h1_line" data-aos="fade-up"/>
+    <h2 class="fp_h2_heading" data-aos="fade-up">USPs of project</h2>
 
-    <hr class="flagship_project_alignment fp_h1_line" />
-    <h2 class="fp_h2_heading">USPs of project</h2>
-
-    <div class="flagship_project_alignment usp_box">
-      <p class="flagship_para usp_box_content">
+    <div class="flagship_project_alignment usp_box" data-aos="fade-up">
+      <p class="flagship_para usp_box_content" >
         The city design has been planned at two levels. First, with the design
         level elements required to make the city sustainable. Second, the
         implementation of green roof, earth cooling, solar panels, ground water
@@ -207,14 +218,14 @@
       </p>
     </div>
 
-    <p class="flagship_project_alignment fp_features">
+    <p class="flagship_project_alignment fp_features"data-aos="fade-up">
       The features of project are
     </p>
-    <div class="fp_features_arrow">
+    <div class="fp_features_arrow"data-aos="fade-up">
       <img src="images/Arrow 2.svg" alt="Side Arrow" />
     </div>
 
-    <ul class="flagship_project_alignment fp_features_para">
+    <ul class="flagship_project_alignment fp_features_para"data-aos="fade-up">
       <li>Provision of 24x7 power supply.</li>
       <li>International design standard.</li>
       <li>
@@ -245,16 +256,16 @@
       <li>Iconic towers to be designed along the Ganga riverfront.</li>
     </ul>
 
-    <div class="flag_p_img1">
+    <div class="flag_p_img1"data-aos="fade-up">
       <img src="images/flagship_p--pic2.svg" alt="" />
     </div>
 
-    <hr class="flagship_project_alignment fp_h1_line" />
-    <h2 class="fp_h2_heading">Investment Opportunities</h2>
+    <hr class="flagship_project_alignment fp_h1_line" data-aos="fade-up"/>
+    <h2 class="fp_h2_heading"data-aos="fade-up">Investment Opportunities</h2>
 
     <div class="flagship_project_alignment grid fp_investment">
       <!--  -->
-      <div class="fp_grid_set big_height">
+      <div class="fp_grid_set big_height" data-aos="fade-up">
         <div class="fp_investment_item">
           <h3 class="fp_investment_heading">Industrial</h3>
           <div class="fp_line"></div>
@@ -277,7 +288,7 @@
         </div>
       </div>
       <!--  -->
-      <div class="fp_grid_set big_height">
+      <div class="fp_grid_set big_height"data-aos="fade-up">
         <div class="fp_investment_item">
           <h3 class="fp_investment_heading">Residential Units</h3>
           <div class="fp_line"></div>
@@ -299,7 +310,7 @@
         </div>
       </div>
       <!--  -->
-      <div class="fp_grid_set small_height">
+      <div class="fp_grid_set small_height"data-aos="fade-up">
         <div class="fp_investment_item">
           <h3 class="fp_investment_heading">Commercial</h3>
           <div class="fp_line"></div>
@@ -313,7 +324,7 @@
         </div>
       </div>
       <!--  -->
-      <div class="fp_grid_set small_height">
+      <div class="fp_grid_set small_height"data-aos="fade-up">
         <div class="fp_investment_item">
           <h3 class="fp_investment_heading">Institutions</h3>
           <div class="fp_line"></div>
@@ -328,14 +339,16 @@
       </div>
     </div>
 
-    <div class="flag_p_img1">
+    <div class="flag_p_img1" data-aos="fade-up">
       <img src="images/flagship_p--pic3.svg" alt="" />
     </div>
+    <div class="fp_h2_div" data-aos="fade-up">
+      <div class="flagship_project_alignment fp_h1_line"></div>
+      <h2 class="fp_h2_heading">Facilities and infrastructure</h2>
+    </div>
 
-    <hr class="flagship_project_alignment fp_h1_line" />
-    <h2 class="fp_h2_heading">Facilities and infrastructure</h2>
 
-    <ul class="flagship_project_alignment fp_features_para">
+    <ul class="flagship_project_alignment fp_features_para" data-aos="fade-up">
       <li>
         Situated at a distance of approx. 75 kms. from Lucknow Airport & Kanpur
         Rail Station (approx. 10 Km).
@@ -353,7 +366,7 @@
     </ul>
 
 
-    <div class="grid table_grid">
+    <div class="grid table_grid" data-aos="fade-up">
       <div class="table_grid_item">
         <table class="flag_table">
           <thead class="flag_table_header">
@@ -412,15 +425,15 @@
       </div>
     </div>
 
-    <div class="flag_p_img1" style="margin-bottom: 120px; margin-left: 401px">
+    <div class="flag_p_img1" style="margin-bottom: 120px; margin-left: 401px" data-aos="fade-up">
       <img src="images/flagship_p--pic4.svg" alt="" />
     </div>
 
-    <h1 class="flagship_project_heading" style="text-align: center">
+    <h1 class="flagship_project_heading" style="text-align: center" data-aos="fade-up">
       TransGanga City Layout
     </h1>
 
-    <div class="flag_p_img1" style="margin-left: 245px">
+    <div class="flag_p_img1" style="margin-left: 245px" data-aos="fade-up">
       <img
         class="Ganga_image"
         src="images/flagship_p--pic5.svg"
@@ -428,10 +441,10 @@
       />
     </div>
 
-    <hr class="flagship_project_alignment fp_h1_line" />
-    <h2 class="fp_h2_heading">Location Advantage</h2>
+    <hr class="flagship_project_alignment fp_h1_line" data-aos="fade-up"/>
+    <h2 class="fp_h2_heading"data-aos="fade-up">Location Advantage</h2>
 
-    <div class="flagship_project_alignment grid location_grid">
+    <div class="flagship_project_alignment grid location_grid"data-aos="fade-up">
       <div class="location_item1">
         <ul class="fp_features_para loc_margin">
           <li>3 Km from Ganga Barrage at Kanpur.</li>
@@ -457,22 +470,22 @@
       </div>
     </div>
 
-    <div class="flagship_project_alignment loc_available">
+    <div class="flagship_project_alignment loc_available" data-aos="fade-up">
       <h4 class="loc_heading">Alloted plots (in units)</h4>
       <div class="loc_item loc_item1">Industrial 15</div>
       <div class="loc_item">Residential 1231</div>
     </div>
-    <div class="loc_available">
+    <div class="loc_available" data-aos="fade-up">
       <h4 class="loc_heading">Vacant plots (in units)</h4>
       <div class="loc_item loc_item1">Industrial 166</div>
       <div class="loc_item">Residential 829</div>
     </div>
 
-    <h1 class="flagship_project_heading" style="text-align: center">
+    <h1 class="flagship_project_heading" style="text-align: center" data-aos="fade-up">
       TransGanga City on Google Map
     </h1>
 
-    <div class="map-responsive">
+    <div class="map-responsive" data-aos="fade-up">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3569.7232404492047!2d80.34218071460842!3d26.529024083294292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c393d42bdebd9%3A0x565ca2daa4b7e02!2sTrans%20Ganga%20City!5e0!3m2!1sen!2sin!4v1627484106586!5m2!1sen!2sin"
         width="1160"
@@ -483,19 +496,19 @@
       ></iframe>
     </div>
 
-    <div>
+    <div class="fp_h2_div" data-aos="fade-up">
       <hr class="flagship_project_alignment fp_h1_line" />
       <h2 class="fp_h2_heading">UP Industrial Policy 2017 Highlights</h2>
     </div>
 
-    <p class="flagship_project_alignment fp_features">
+    <p class="flagship_project_alignment fp_features"data-aos="fade-up">
       The features of project are
     </p>
-    <div class="fp_features_arrow">
+    <div class="fp_features_arrow"data-aos="fade-up">
       <img src="images/Arrow 2.svg" alt="Side Arrow" />
     </div>
     <div>
-      <ol class="flagship_project_alignment fp_features_para">
+      <ol class="flagship_project_alignment fp_features_para"data-aos="fade-up">
         <li>Stamp duty exemption of 75% in Madhyanchal</li>
         <li>EPF reimbursement facility to the extent of 50% of employer’s contribution to all such new Industrial units providing direct employment to 100 or more unskilled workers.</li>
         <li>Capital Interest Subsidy to the extent of 5% per annum for 5 years in the form of reimbursement on loan taken for procurement of plant & machinery, subject to an annual ceiling of INR 50 lacs.</li>
@@ -511,9 +524,9 @@
       </ul>
     </div>
 
-    <p class="flagship_project_alignment fp_features_para">The eligibility requirements for the respective categories are as follows:</p>
+    <p class="flagship_project_alignment fp_features_para"data-aos="fade-up">The eligibility requirements for the respective categories are as follows:</p>
 
-    <div class="flagship_project_alignment">
+    <div class="flagship_project_alignment"data-aos="fade-up" style="margin-top: 33px;">
       <table class="eligibility_table">
         <thead class="eligibility_table_header">
           <tr>
@@ -537,12 +550,12 @@
         </tbody>
       </table>
     </div>
-    <ul class="flagship_project_alignment fp_features_para">
+    <ul class="flagship_project_alignment fp_features_para"data-aos="fade-up"style="margin-top: 33px;">
       <li> The incentives will be applicable for new units as well as projects under expansion/diversification. Projects in the mega categories (mega, mega plus and super mega) will be processed on a case to case basis for finalising the incentive structure.</li>
       <li>All incentives for mega investments in the form of reimbursement, subsidies, exemptions etc., will be subject to a maximum of 200% of fixed capital investment made in Madhyanchal region.</li>
     </ul>
 
-    <div class="flagship_project_alignment conditions_box">
+    <div class="flagship_project_alignment conditions_box"data-aos="fade-up"style="margin-top: 33px;">
       <p class="flagship_para conditions_box_content">
         The Conditions for (12.) are as follows:
 Units availing incentives from any other policy or those sanctioned by the departments of the State government, will also be entitled to avail incentives/benefits mentioned in this policy provided the same kind of benefits/incentives are not being availed from any other policy. If a unit avails any incentive under industry specific policies like Agro & Food Processing Policy, IT Policy etc., it will not be provided incentive of similar nature under this policy.
@@ -550,157 +563,12 @@ A negative list of industries will be identified which will be ineligible for an
       </p>
     </div>
 
-    <footer class="footer">
-      <img src="images/footerlogo.png" alt="UPSIDA logo" class="footer_image" />
+    <div id="footer"></div>
 
-      <div class="grid footer_grid">
-        <div class="footer_grid_item1">
-          <table class="footer_table1">
-            <thead class="footer_table_heading">
-              <tr>
-                <th>Quick links</th>
-              </tr>
-            </thead>
-            <tbody class="footer_table_body">
-              <tr>
-                <td>About Us</td>
-              </tr>
-              <tr>
-                <td>Policies</td>
-              </tr>
-              <tr>
-                <td>E-services</td>
-              </tr>
-              <tr>
-                <td>Projects</td>
-              </tr>
-              <tr>
-                <td>Office Orders</td>
-              </tr>
-              <tr>
-                <td>GIS</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="footer_grid_item2">
-          <table class="footer_table2">
-            <thead class="footer_table_heading">
-              <tr>
-                <th>Land Allotment</th>
-              </tr>
-            </thead>
-            <tbody class="footer_table_body">
-              <tr>
-                <td>Industrial Land Allotment Form</td>
-              </tr>
-              <tr>
-                <td>Checklist Document</td>
-              </tr>
-              <tr>
-                <td>Operating Manual 2011</td>
-              </tr>
-              <tr>
-                <td>SOP for industrial and allotment</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="footer_grid_item3">
-          <table class="footer_table3">
-            <thead class="footer_table_heading">
-              <tr>
-                <th>UPSIDA</th>
-              </tr>
-            </thead>
-            <tbody class="footer_table_body">
-              <tr>
-                <td>Annexure A, Inspection Procedure Checklist & Performa</td>
-              </tr>
-              <tr>
-                <td>Land Regulation 2004 after 26 UPSIDA</td>
-              </tr>
-              <tr>
-                <td>Building Regulation 2004 after 26 UPSIDA</td>
-              </tr>
-              <tr>
-                <td>UPSIDA Byelaws</td>
-              </tr>
-              <tr>
-                <td>SOP For Computerised Allocation of Inspectors</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="footer_grid_item4">
-          <table class="footer_table4">
-            <thead class="footer_table_heading">
-              <tr>
-                <th>Security & Privacy</th>
-              </tr>
-            </thead>
-            <tbody class="footer_table_body">
-              <tr>
-                <td>Terms of Use</td>
-              </tr>
-              <tr>
-                <td>Privacy Policy</td>
-              </tr>
-              <tr>
-                <td>Return/Refund Policy</td>
-              </tr>
-              <tr>
-                <td>Store Location</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="footer_grid_item5">
-          <table class="footer_table5">
-            <thead class="footer_table_heading">
-              <tr>
-                <th>Public Forrum</th>
-              </tr>
-            </thead>
-            <tbody class="footer_table_body">
-              <tr>
-                <td>View Allotment Details</td>
-              </tr>
-              <tr>
-                <td>View Inspection Document</td>
-              </tr>
-              <tr>
-                <td>View BuildingPlan Document</td>
-              </tr>
-              <tr>
-                <td>View Service TimeLine</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      <h4 class="footer_socialmedia_heading">Social Media</h4>
-      <div class="socialmedia">
-        <div class="socialmedia_logos">
-          <img src="images/facebook.svg" alt="" />
-        </div>
-        <div class="socialmedia_logos">
-          <img src="images/insta.svg" alt="" />
-        </div>
-        <div class="socialmedia_logos">
-          <img src="images/youtube.svg" alt="" />
-        </div>
-        <div class="socialmedia_logos">
-          <img src="images/twitter.svg" alt="" />
-        </div>
-        <div class="socialmedia_logos">
-          <img src="images/wikipedia.png" alt="" />
-        </div>
-      </div>
-
-      <div class="divider"></div>
-      <div class="rights">© 2021 UPSIDA | All Rights Reserved</div>
-    </footer>
+    <!-- Script for animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

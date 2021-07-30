@@ -7,17 +7,35 @@
     <title>Home</title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Karla"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="css/animation.css" />
     <script src="/script/main.js"></script>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Karla|Alatsi|Noto Sans JP|Inter|Roboto"
+      rel="stylesheet"
+    />
+    <!-- Jquery for navbar and footer -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Loading Navbar & Footer -->
+    <script>
+      $(function () {
+        $("#navbar").load("navbar.html");
+      });
+      $(function () {
+        $("#footer").load("footer.html");
+      });
+    </script>
+    <!-- Animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
+    <!-- <div id="navbar"></div> -->
+    <!-- Navbar -->
     <nav class="nav">
       <div class="nav__logo">
         <img src="/images/logo.svg" alt="website logo" />
@@ -38,7 +56,7 @@
 
     <nav class="bottom--nav">
       <div class="list__item">
-        <a class="nav--link" href="/index.html">HOME</a>
+        <a class="nav--link active" href="/about.html">ABOUT US</a>
       </div>
       <div class="list__item">
         <a class="nav--link" href="/about.html">ABOUT US</a>
@@ -61,14 +79,15 @@
         <a class="nav--link" href="/officeOrders.html">OFFICE ORDERS</a>
       </div>
       <div class="list__item">
-        <a class="nav--link" href="/officeOrders.html">GIS</a>
+        <a class="nav--link" href="#">GIS</a>
       </div>
       <div class="list__item">
-        <a class="nav--link" href="/officeOrders.html">AVAILABLE PLOTS</a>
+        <a class="nav--link" href="#">AVAILABLE PLOTS</a>
       </div>
     </nav>
 
     <div class="dropdown-content" id="myDropdown">
+      <div class="line"></div>
       <div class="content">
         <div class="resource--heading">
           <div class="resource--tag">Our recent links</div>
@@ -162,29 +181,40 @@
         Prayagraj</marquee
       >
     </div>
-    <div class="services">
+    <div class="services" data-aos="fade-up">
       <div class="service_icon service_gap">
-        <img src="images/Group 22-1.svg" alt="" class="service_image" />
-        <div class="service_text">Online services</div>
+        <a href="" class="service_link"
+          ><img src="images/Group 22-1.svg" alt="" class="service_image" />
+          <div class="service_text">Online services</div>
+        </a>
       </div>
       <div class="service_icon service_gap">
-        <img src="images/Group 22-2.svg" alt="" class="service_image" />
-        <div class="service_text">Track application</div>
+        <a href="" class="service_link">
+          <img src="images/Group 22-2.svg" alt="" class="service_image" />
+          <div class="service_text">Track application</div>
+        </a>
       </div>
       <div class="service_icon service_gap">
-        <img src="images/Group 22-3.svg" alt="" class="service_image" />
-        <div class="service_text">UPSIDA newsletter</div>
+        <a href="" class="service_link"
+          ><img src="images/Group 22-3.svg" alt="" class="service_image" />
+          <div class="service_text">UPSIDA newsletter</div>
+        </a>
       </div>
       <div class="service_icon service_gap">
-        <img src="images/Group 22-4.svg" alt="" class="service_image" />
-        <div class="service_text">Invester guide</div>
+        <a href="" class="service_link">
+          <img src="images/Group 22-4.svg" alt="" class="service_image" />
+          <div class="service_text">Invester guide</div>
+        </a>
       </div>
       <div class="service_icon">
-        <img src="images/Group 22-5.svg" alt="" class="service_image" />
-        <div class="service_text">Application for logistics</div>
+        <a href="" class="service_link">
+          <img src="images/Group 22-5.svg" alt="" class="service_image" />
+          <div class="service_text">Application for logistics</div>
+        </a>
       </div>
     </div>
-    <div class="grid grid--1x2 aboutus--container">
+
+    <div class="grid grid--1x2 aboutus--container" data-aos="fade-left">
       <div class="intro--heading">
         <p class="aboutus--heading">About us</p>
         <p class="whatisupsida--heading">What is UPSIDA?</p>
@@ -197,16 +227,17 @@
           has been instrumental in keeping the State at the numero uno position
           among the states for several decades now.
         </p>
-        <button class="aboutus--more">
-          <a href="/about.html" target="_blank">Learn More</a>
-        </button>
+
+        <a href="/about.html" target="_blank" class="aboutus--more hvr-fade"
+          >Learn More</a
+        >
       </div>
     </div>
-    <div class="leader">
+    <div class="leader" data-aos="fade-up">
       <img src="/images/leaders.jpg" alt="" />
     </div>
     <div class="projects--container">
-      <div class="projects--heading">
+      <div class="projects--heading" data-aos="fade-up">
         Promoting industrial progress with a plethora of investor friendly
         platform
       </div>
@@ -303,7 +334,7 @@
     </div> -->
 
       <div class="index_flagship_grid">
-        <div class="cards">
+        <div class="cards text-pop-up-top" data-aos="fade-up">
           <div>
             <img
               src="/images/trans ganga city.jpg"
@@ -322,7 +353,7 @@
           </div>
         </div>
 
-        <div class="cards">
+        <div class="cards text-pop-up-top" data-aos="fade-up">
           <div>
             <img
               src="/images/Saraswati Hi Tech City.jpg"
@@ -340,7 +371,7 @@
           </div>
         </div>
 
-        <div class="cards">
+        <div class="cards text-pop-up-top" data-aos="fade-up">
           <div>
             <img
               src="/images/trans delhi signature city.jpg"
@@ -360,7 +391,7 @@
           </div>
         </div>
 
-        <div class="cards">
+        <div class="cards text-pop-up-top" data-aos="fade-up">
           <div>
             <img src="/images/plastic city.jpg" alt="Plastic City image" />
           </div>
@@ -375,7 +406,7 @@
           </div>
         </div>
 
-        <div class="cards">
+        <div class="cards text-pop-up-top" data-aos="fade-up">
           <div>
             <img
               src="/images/akic.jpg"
@@ -393,7 +424,7 @@
           </div>
         </div>
 
-        <div class="cards">
+        <div class="cards text-pop-up-top" data-aos="fade-up">
           <div>
             <img src="/images/perfume park.jpg" alt="Perfume Park image" />
           </div>
@@ -408,12 +439,13 @@
           </div>
         </div>
       </div>
-      <div class="view__more">
-        <a href="/flagship.html" target="_blank">View More</a>
-      </div>
+
+      <a href="/flagship.html" target="_blank" class="view__more hvr-fade1"
+        >View More</a
+      >
     </div>
 
-    <table class="news__letter">
+    <table class="news__letter" data-aos="fade-right">
       <thead class="header">
         <tr>
           <th>UPSIDA Newsletter</th>
@@ -459,7 +491,7 @@
       </tbody>
     </table>
 
-    <table class="news__letter tenders">
+    <table class="news__letter tenders" data-aos="fade-left">
       <thead class="header">
         <tr>
           <th>News and tenders</th>
@@ -505,157 +537,12 @@
       </tbody>
     </table>
 
-    <footer class="footer">
-      <img src="images/footerlogo.png" alt="UPSIDA logo" class="footer_image" />
+    <div id="footer"></div>
 
-      <div class="grid footer_grid">
-        <div class="footer_grid_item1">
-          <table class="footer_table1">
-            <thead class="footer_table_heading">
-              <tr>
-                <th>Quick links</th>
-              </tr>
-            </thead>
-            <tbody class="footer_table_body">
-              <tr>
-                <td>About Us</td>
-              </tr>
-              <tr>
-                <td>Policies</td>
-              </tr>
-              <tr>
-                <td>E-services</td>
-              </tr>
-              <tr>
-                <td>Projects</td>
-              </tr>
-              <tr>
-                <td>Office Orders</td>
-              </tr>
-              <tr>
-                <td>GIS</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="footer_grid_item2">
-          <table class="footer_table2">
-            <thead class="footer_table_heading">
-              <tr>
-                <th>Land Allotment</th>
-              </tr>
-            </thead>
-            <tbody class="footer_table_body">
-              <tr>
-                <td>Industrial Land Allotment Form</td>
-              </tr>
-              <tr>
-                <td>Checklist Document</td>
-              </tr>
-              <tr>
-                <td>Operating Manual 2011</td>
-              </tr>
-              <tr>
-                <td>SOP for industrial and allotment</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="footer_grid_item3">
-          <table class="footer_table3">
-            <thead class="footer_table_heading">
-              <tr>
-                <th>UPSIDA</th>
-              </tr>
-            </thead>
-            <tbody class="footer_table_body">
-              <tr>
-                <td>Annexure A, Inspection Procedure Checklist & Performa</td>
-              </tr>
-              <tr>
-                <td>Land Regulation 2004 after 26 UPSIDA</td>
-              </tr>
-              <tr>
-                <td>Building Regulation 2004 after 26 UPSIDA</td>
-              </tr>
-              <tr>
-                <td>UPSIDA Byelaws</td>
-              </tr>
-              <tr>
-                <td>SOP For Computerised Allocation of Inspectors</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="footer_grid_item4">
-          <table class="footer_table4">
-            <thead class="footer_table_heading">
-              <tr>
-                <th>Security & Privacy</th>
-              </tr>
-            </thead>
-            <tbody class="footer_table_body">
-              <tr>
-                <td>Terms of Use</td>
-              </tr>
-              <tr>
-                <td>Privacy Policy</td>
-              </tr>
-              <tr>
-                <td>Return/Refund Policy</td>
-              </tr>
-              <tr>
-                <td>Store Location</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="footer_grid_item5">
-          <table class="footer_table5">
-            <thead class="footer_table_heading">
-              <tr>
-                <th>Public Forrum</th>
-              </tr>
-            </thead>
-            <tbody class="footer_table_body">
-              <tr>
-                <td>View Allotment Details</td>
-              </tr>
-              <tr>
-                <td>View Inspection Document</td>
-              </tr>
-              <tr>
-                <td>View BuildingPlan Document</td>
-              </tr>
-              <tr>
-                <td>View Service TimeLine</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      <h4 class="footer_socialmedia_heading">Social Media</h4>
-      <div class="socialmedia">
-        <div class="socialmedia_logos">
-          <img src="images/facebook.svg" alt="" />
-        </div>
-        <div class="socialmedia_logos">
-          <img src="images/insta.svg" alt="" />
-        </div>
-        <div class="socialmedia_logos">
-          <img src="images/youtube.svg" alt="" />
-        </div>
-        <div class="socialmedia_logos">
-          <img src="images/twitter.svg" alt="" />
-        </div>
-        <div class="socialmedia_logos">
-          <img src="images/wikipedia.png" alt="" />
-        </div>
-      </div>
-
-      <div class="divider"></div>
-      <div class="rights">© 2021 UPSIDA | All Rights Reserved</div>
-    </footer>
+    <!-- Script for animation -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
