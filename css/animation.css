@@ -14,7 +14,7 @@
 .hvr-fade:hover,
 .hvr-fade:focus,
 .hvr-fade:active {
-  width: 222px;
+  width: 15.417vw;
   height: 52px;
   background: #2b3144;
   border: 1px solid #2b3144;
@@ -37,7 +37,7 @@
 .hvr-fade1:hover,
 .hvr-fade1:focus,
 .hvr-fade1:active {
-  width: 222px;
+  width: 15.417vw;
   height: 52px;
 
   background: #f0f2f9;

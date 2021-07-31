@@ -16,6 +16,21 @@
       rel="stylesheet"
     />
     <script src="/script/main.js"></script>
+    <!-- Jquery for navbar and footer -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <!-- Loading Navbar & Footer -->
+    <script>
+      $(function () {
+        $("#navbar").load("navbar.html");
+      });
+      $(function () {
+        $("#footer").load("footer.html");
+      });
+    </script>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -30,12 +45,13 @@
     />
   </head>
   <body>
+    <!-- Navbar -->
     <nav class="nav">
       <div class="nav__logo">
         <img src="/images/logo.svg" alt="website logo" />
       </div>
       <div class="logo--title logo--and--special">
-        Uttar Pradesh State industrial development authority
+        Uttar Pradesh State Industrial Development Authority
       </div>
       <div class="special--link logo--and--special">
         <a class="link1" href="">special link one</a>
@@ -48,37 +64,41 @@
       </div>
     </nav>
 
-    <nav class="bottom--nav">
-      <div class="list__item">
-        <a class="nav--link" href="/index.html">HOME</a>
-      </div>
-      <div class="list__item">
-        <a class="nav--link" href="/about.html">ABOUT US</a>
-      </div>
-      <div class="list__item">
-        <a class="nav--link" href="/policies.html">POLICIES</a>
-      </div>
-      <div class="list__item">
-        <a class="nav--link" href="/eservices.html">E-SERVICES</a>
-      </div>
-      <div class="list__item">
-        <a class="nav--link" href="/flagship.html">FLAGSHIP PROJECTS</a>
-      </div>
-      <div class="list__item">
-        <a class="nav--link dropbtn" onclick="myFunction()">
-          RESOURCE CENTER
-        </a>
-      </div>
-      <div class="list__item">
-        <a class="nav--link active" href="/officeOrders.html">OFFICE ORDERS</a>
-      </div>
-      <div class="list__item">
-        <a class="nav--link" href="#">GIS</a>
-      </div>
-      <div class="list__item">
-        <a class="nav--link" href="#">AVAILABLE PLOTS</a>
-      </div>
-    </nav>
+    <div class="back--nav">
+      <nav class="bottom--nav">
+        <div class="list__item">
+          <a class="nav--link" href="/index.html">HOME</a>
+        </div>
+        <div class="list__item">
+          <a class="nav--link" href="/about.html">ABOUT US</a>
+        </div>
+        <div class="list__item">
+          <a class="nav--link" href="/policies.html">POLICIES</a>
+        </div>
+        <div class="list__item">
+          <a class="nav--link" href="/eservices.html">E-SERVICES</a>
+        </div>
+        <div class="list__item">
+          <a class="nav--link" href="/flagship.html">FLAGSHIP PROJECTS</a>
+        </div>
+        <div class="list__item">
+          <a class="nav--link dropbtn" onclick="myFunction()">
+            RESOURCE CENTER
+          </a>
+        </div>
+        <div class="list__item">
+          <a class="nav--link active" href="/officeOrders.html"
+            >OFFICE ORDERS</a
+          >
+        </div>
+        <div class="list__item">
+          <a class="nav--link" href="/error.html">GIS</a>
+        </div>
+        <div class="list__item">
+          <a class="nav--link" href="/error.html">AVAILABLE PLOTS</a>
+        </div>
+      </nav>
+    </div>
 
     <div class="dropdown-content" id="myDropdown">
       <div class="line"></div>
@@ -95,27 +115,70 @@
               <th>DOCUMENTS</th>
             </tr>
           </thead>
+
           <tbody class="document--body">
             <tr>
-              <td>Industrial area operating process</td>
+              <td>
+                <a
+                  href="/error.html"
+                  class="remove_link_decoration remove_resource_padding"
+                  >Industrial area operating process</a
+                >
+              </td>
             </tr>
             <tr>
-              <td>Operating Manual</td>
+              <td>
+                <a
+                  href="/error.html"
+                  class="remove_link_decoration remove_resource_padding"
+                  >Operating Manual</a
+                >
+              </td>
             </tr>
             <tr>
-              <td>Document For approval of building plans</td>
+              <td>
+                <a
+                  href="/error.html"
+                  class="remove_link_decoration remove_resource_padding"
+                  >Document For approval of building plans</a
+                >
+              </td>
             </tr>
             <tr>
-              <td>Present Rates</td>
+              <td>
+                <a
+                  href="/error.html"
+                  class="remove_link_decoration remove_resource_padding"
+                  >Present Rates</a
+                >
+              </td>
             </tr>
             <tr>
-              <td>Condition For tenders</td>
+              <td>
+                <a
+                  href="/error.html"
+                  class="remove_link_decoration remove_resource_padding"
+                  >Condition For tenders</a
+                >
+              </td>
             </tr>
             <tr>
-              <td>Allotment application form</td>
+              <td>
+                <a
+                  href="/error.html"
+                  class="remove_link_decoration remove_resource_padding"
+                  >Allotment application form</a
+                >
+              </td>
             </tr>
             <tr>
-              <td>Service Rules</td>
+              <td>
+                <a
+                  href="/error.html"
+                  class="remove_link_decoration remove_resource_padding"
+                  >Service Rules</a
+                >
+              </td>
             </tr>
           </tbody>
         </table>
@@ -129,15 +192,32 @@
           </thead>
           <tbody class="document--body">
             <tr>
-              <td>By laws of UPSIDA</td>
-            </tr>
-            <tr>
               <td>
-                Amendment in UPSIDA Land Development & Building Regulation 2018
+                <a
+                  href="/error.html"
+                  class="remove_link_decoration remove_resource_padding"
+                  >By laws of UPSIDA</a
+                >
               </td>
             </tr>
             <tr>
-              <td>Second Amendment in UPSIDA Land Development</td>
+              <td>
+                <a
+                  href="/error.html"
+                  class="remove_link_decoration remove_resource_padding"
+                  >Amendment in UPSIDA Land Development & Building Regulation
+                  2018</a
+                >
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <a
+                  href="/error.html"
+                  class="remove_link_decoration remove_resource_padding"
+                  >Second Amendment in UPSIDA Land Development</a
+                >
+              </td>
             </tr>
           </tbody>
         </table>
@@ -150,10 +230,23 @@
           </thead>
           <tbody class="document--body">
             <tr>
-              <td>Office Orders</td>
+              <td>
+                <a
+                  href="/officeOrders.html"
+                  class="remove_link_decoration"
+                  target="_blank"
+                  >Office Orders</a
+                >
+              </td>
             </tr>
             <tr>
-              <td>Development Process</td>
+              <td>
+                <a
+                  href="/error.html"
+                  class="remove_link_decoration remove_resource_padding"
+                  >Development Process</a
+                >
+              </td>
             </tr>
           </tbody>
         </table>
@@ -189,6 +282,14 @@
             <td class="office--body--data">Establishment Section</td>
           </tr>
           <tr>
+            <td class="office--body--data">671-674/SIDC/IA/Policy vol-17</td>
+            <td class="office--body--data">Office Orders</td>
+            <td class="office--body--data">08/05/2021 11:59</td>
+            <td class="office--body--data">UPSIDA</td>
+            <td class="sub office--body--data">Land Allotment Policy EODB</td>
+            <td class="office--body--data">MD</td>
+          </tr>
+          <tr>
             <td class="office--body--data">4027-34/sida/estt</td>
             <td class="office--body--data">Office Orders</td>
             <td class="office--body--data">08/05/2021 11:59</td>
@@ -198,6 +299,33 @@
               Kumar Rai &amp;amp; ACEO Ms. Neha Ja
             </td>
             <td class="office--body--data">Establishment Section</td>
+          </tr>
+          <tr>
+            <td class="office--body--data">671-674/SIDC/IA/Policy vol-17</td>
+            <td class="office--body--data">Office Orders</td>
+            <td class="office--body--data">08/05/2021 11:59</td>
+            <td class="office--body--data">UPSIDA</td>
+            <td class="sub office--body--data">Land Allotment Policy EODB</td>
+            <td class="office--body--data">MD</td>
+          </tr>
+          <tr>
+            <td class="office--body--data">4027-34/sida/estt</td>
+            <td class="office--body--data">Office Orders</td>
+            <td class="office--body--data">08/05/2021 11:59</td>
+            <td class="office--body--data">Establishment</td>
+            <td class="sub office--body--data">
+              In reference to addressing of letters/papers ; ACEO Shri Rajesh
+              Kumar Rai &amp;amp; ACEO Ms. Neha Ja
+            </td>
+            <td class="office--body--data">Establishment Section</td>
+          </tr>
+          <tr>
+            <td class="office--body--data">302-674/SIDC/IA/Policy vol-17</td>
+            <td class="office--body--data">Office Orders</td>
+            <td class="office--body--data">08/05/2021 11:59</td>
+            <td class="office--body--data">UPSIDA</td>
+            <td class="sub office--body--data">Land Allotment Policy EODB</td>
+            <td class="office--body--data">MD</td>
           </tr>
           <tr>
             <td class="office--body--data">4027-34/sida/estt</td>
@@ -222,51 +350,7 @@
             <td class="office--body--data">Establishment Section</td>
           </tr>
           <tr>
-            <td class="office--body--data">4027-34/sida/estt</td>
-            <td class="office--body--data">Office Orders</td>
-            <td class="office--body--data">08/05/2021 11:59</td>
-            <td class="office--body--data">Establishment</td>
-            <td class="sub office--body--data">
-              In reference to addressing of letters/papers ; ACEO Shri Rajesh
-              Kumar Rai &amp;amp; ACEO Ms. Neha Ja
-            </td>
-            <td class="office--body--data">Establishment Section</td>
-          </tr>
-          <tr>
-            <td class="office--body--data">4027-34/sida/estt</td>
-            <td class="office--body--data">Office Orders</td>
-            <td class="office--body--data">08/05/2021 11:59</td>
-            <td class="office--body--data">Establishment</td>
-            <td class="sub office--body--data">
-              In reference to addressing of letters/papers ; ACEO Shri Rajesh
-              Kumar Rai &amp;amp; ACEO Ms. Neha Ja
-            </td>
-            <td class="office--body--data">Establishment Section</td>
-          </tr>
-          <tr>
-            <td class="office--body--data">4027-34/sida/estt</td>
-            <td class="office--body--data">Office Orders</td>
-            <td class="office--body--data">08/05/2021 11:59</td>
-            <td class="office--body--data">Establishment</td>
-            <td class="sub office--body--data">
-              In reference to addressing of letters/papers ; ACEO Shri Rajesh
-              Kumar Rai &amp;amp; ACEO Ms. Neha Ja
-            </td>
-            <td class="office--body--data">Establishment Section</td>
-          </tr>
-          <tr>
-            <td class="office--body--data">4027-34/sida/estt</td>
-            <td class="office--body--data">Office Orders</td>
-            <td class="office--body--data">08/05/2021 11:59</td>
-            <td class="office--body--data">Establishment</td>
-            <td class="sub office--body--data">
-              In reference to addressing of letters/papers ; ACEO Shri Rajesh
-              Kumar Rai &amp;amp; ACEO Ms. Neha Ja
-            </td>
-            <td class="office--body--data">Establishment Section</td>
-          </tr>
-          <tr>
-            <td class="office--body--data">4027-34/sida/estt</td>
+            <td class="office--body--data">1027-34/sida/estt</td>
             <td class="office--body--data">Office Orders</td>
             <td class="office--body--data">08/05/2021 11:59</td>
             <td class="office--body--data">Establishment</td>
@@ -534,158 +618,7 @@
       </table>
     </div>
 
-    <footer class="footer">
-      <img src="images/footerlogo.png" alt="UPSIDA logo" class="footer_image" />
-
-      <div class="grid footer_grid">
-        <div class="footer_grid_item1">
-          <table class="footer_table1">
-            <thead class="footer_table_heading">
-              <tr>
-                <th>Quick links</th>
-              </tr>
-            </thead>
-            <tbody class="footer_table_body">
-              <tr>
-                <td>About Us</td>
-              </tr>
-              <tr>
-                <td>Policies</td>
-              </tr>
-              <tr>
-                <td>E-services</td>
-              </tr>
-              <tr>
-                <td>Projects</td>
-              </tr>
-              <tr>
-                <td>Office Orders</td>
-              </tr>
-              <tr>
-                <td>GIS</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="footer_grid_item2">
-          <table class="footer_table2">
-            <thead class="footer_table_heading">
-              <tr>
-                <th>Land Allotment</th>
-              </tr>
-            </thead>
-            <tbody class="footer_table_body">
-              <tr>
-                <td>Industrial Land Allotment Form</td>
-              </tr>
-              <tr>
-                <td>Checklist Document</td>
-              </tr>
-              <tr>
-                <td>Operating Manual 2011</td>
-              </tr>
-              <tr>
-                <td>SOP for industrial and allotment</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="footer_grid_item3">
-          <table class="footer_table3">
-            <thead class="footer_table_heading">
-              <tr>
-                <th>UPSIDA</th>
-              </tr>
-            </thead>
-            <tbody class="footer_table_body">
-              <tr>
-                <td>Annexure A, Inspection Procedure Checklist & Performa</td>
-              </tr>
-              <tr>
-                <td>Land Regulation 2004 after 26 UPSIDA</td>
-              </tr>
-              <tr>
-                <td>Building Regulation 2004 after 26 UPSIDA</td>
-              </tr>
-              <tr>
-                <td>UPSIDA Byelaws</td>
-              </tr>
-              <tr>
-                <td>SOP For Computerised Allocation of Inspectors</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="footer_grid_item4">
-          <table class="footer_table4">
-            <thead class="footer_table_heading">
-              <tr>
-                <th>Security & Privacy</th>
-              </tr>
-            </thead>
-            <tbody class="footer_table_body">
-              <tr>
-                <td>Terms of Use</td>
-              </tr>
-              <tr>
-                <td>Privacy Policy</td>
-              </tr>
-              <tr>
-                <td>Return/Refund Policy</td>
-              </tr>
-              <tr>
-                <td>Store Location</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="footer_grid_item5">
-          <table class="footer_table5">
-            <thead class="footer_table_heading">
-              <tr>
-                <th>Public Forrum</th>
-              </tr>
-            </thead>
-            <tbody class="footer_table_body">
-              <tr>
-                <td>View Allotment Details</td>
-              </tr>
-              <tr>
-                <td>View Inspection Document</td>
-              </tr>
-              <tr>
-                <td>View BuildingPlan Document</td>
-              </tr>
-              <tr>
-                <td>View Service TimeLine</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      <h4 class="footer_socialmedia_heading">Social Media</h4>
-      <div class="socialmedia">
-        <div class="socialmedia_logos">
-          <img src="images/facebook.svg" alt="" />
-        </div>
-        <div class="socialmedia_logos">
-          <img src="images/insta.svg" alt="" />
-        </div>
-        <div class="socialmedia_logos">
-          <img src="images/youtube.svg" alt="" />
-        </div>
-        <div class="socialmedia_logos">
-          <img src="images/twitter.svg" alt="" />
-        </div>
-        <div class="socialmedia_logos">
-          <img src="images/wikipedia.png" alt="" />
-        </div>
-      </div>
-
-      <div class="divider"></div>
-      <div class="rights">© 2021 UPSIDA | All Rights Reserved</div>
-    </footer>
+    <div id="footer"></div>
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
